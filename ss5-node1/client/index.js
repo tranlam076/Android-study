@@ -35,15 +35,7 @@ function fetchProducts() {
 
 function onSaveProduct(id = null) {
 	var name = document.getElementById('name').value;
-	if (!validate(name, 'Please input a valid name')) {
-		return;
-	}
-	
 	var price = document.getElementById('price').value;
-	if (!validate(price, 'Please input a valid price')) {
-		return;
-	}
-
 	var status = document.getElementById('status').checked;
 	var newProduct = {
 		id: null,
@@ -63,21 +55,14 @@ function onSaveProduct(id = null) {
 		});
 	} else {
 		request(url, 'POST', newProduct, function(error, data) {
-			console.log(data);
+			if (typeof data === 'string') {
+				document.getElementById('lb-message').innerHTML = data;
+				document.getElementById('lb-message').style.display = 'inline';
+			}
 			fetchProducts();
 		});
 	}
 	document.getElementById('lb-message').style.display = 'none';
-}
-
-function validate(value, msg) {
-	if (value === null || value === '' || value === undefined) {
-		document.getElementById('lb-message').innerHTML = msg;
-		document.getElementById('lb-message').style.display = 'inline';
-		return false;
-	} else {
-		return true;
-	}
 }
 
 function onUpdateProduct(id) {

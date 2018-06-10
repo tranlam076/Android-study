@@ -1,4 +1,4 @@
-var products= [
+var products = [
     {
         id: 2,
         name: 'Iphone 7',
@@ -33,11 +33,11 @@ app
     .use(bodyParser.json()) // Execute every single request
     .use(bodyParser.urlencoded({extended: true}));
 
-app.get('/api/v1/products', function(req, res){
+app.get('/api/v1/products', function(req, res) {
     res.status(200).json(products);
 });
 
-app.get('/api/v1/products/:id', function(req, res){
+app.get('/api/v1/products/:id', function(req, res) {
     const id = parseInt(req.params.id);
     const index = findProductById(id);
     if (index !== -1) {
@@ -45,24 +45,30 @@ app.get('/api/v1/products/:id', function(req, res){
     }
 });
 
-app.post('/api/v1/products', function(req, res){
-    const data = req.body;
-    data.id = products.length + 1;
-    createNewId(data);
-    products.push(data);
-    res.status(200).json(data);
+app.post('/api/v1/products', function(req, res) {
+    var data = req.body;
+    if (data.name === null || data.name === '' || data.name === undefined) {
+        res.status(200).send('Please input a valid name');
+    } else if (data.price === null || data.price === '' || data.price === undefined) {
+        res.status(200).send('Please input a valid price');
+    } else {
+        data.id = products.length + 1;
+        createNewId(data);
+        products.push(data);
+        res.status(200).json(data);
+    }
 });
 
 function createNewId(data) {
     if (findProductById(data.id) === -1) {
         return;
     } else {
-        data.id ++;
+        data.id++;
         createNewId(data);
     }
 }
 
-app.put('/api/v1/products/:id', function(req, res){
+app.put('/api/v1/products/:id', function(req, res) {
     const id = parseInt(req.params.id);
     const data = req.body;
     data.id = id;
@@ -73,15 +79,16 @@ app.put('/api/v1/products/:id', function(req, res){
     }
 });
 
-app.delete('/api/v1/products/:id', function(req, res){
+app.delete('/api/v1/products/:id', function(req, res) {
     const id = parseInt(req.params.id);
     const index = findProductById(id);
     if (index !== -1) {
         res.status(200).json(products[index]);
         products.splice(index, 1);
-    }});
+    }
+});
 
-function findProductById (id) {
+function findProductById(id) {
     for (var i = 0; i < products.length; i++) {
         if (products[i].id === id) {
             return i;
@@ -90,6 +97,6 @@ function findProductById (id) {
     return -1;
 }
 
-app.listen(3000, function (){
+app.listen(3000, function() {
     console.log('Example app listening on port 3000!')
 });
