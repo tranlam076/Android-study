@@ -13,12 +13,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server/server.js">
+        <entry file="file://$PROJECT_DIR$/server - 2/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="89" column="14" lean-forward="true" selection-start-line="89" selection-start-column="14" selection-end-line="89" selection-end-column="14" />
+            <state relative-caret-position="255">
+              <caret line="21" column="24" lean-forward="true" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -42,59 +42,7 @@
     <handled-path value="$PROJECT_DIR$/server/node_modules" />
   </component>
   <component name="NodePackageJsonFileManager">
-    <packageJsonPaths>
-      <path value="$PROJECT_DIR$/server/node_modules/accepts/package.json" />
-      <path value="$PROJECT_DIR$/server/node_modules/array-flatten/package.json" />
-      <path value="$PROJECT_DIR$/server/node_modules/body-parser/package.json" />
-      <path value="$PROJECT_DIR$/server/node_modules/bytes/package.json" />
-      <path value="$PROJECT_DIR$/server/node_modules/content-disposition/package.json" />
-      <path value="$PROJECT_DIR$/server/node_modules/content-type/package.json" />
-      <path value="$PROJECT_DIR$/server/node_modules/cookie-signature/package.json" />
-      <path value="$PROJECT_DIR$/server/node_modules/cookie/package.json" />
-      <path value="$PROJECT_DIR$/server/node_modules/debug/package.json" />
-      <path value="$PROJECT_DIR$/server/node_modules/depd/package.json" />
-      <path value="$PROJECT_DIR$/server/node_modules/destroy/package.json" />
-      <path value="$PROJECT_DIR$/server/node_modules/ee-first/package.json" />
-      <path value="$PROJECT_DIR$/server/node_modules/encodeurl/package.json" />
-      <path value="$PROJECT_DIR$/server/node_modules/escape-html/package.json" />
-      <path value="$PROJECT_DIR$/server/node_modules/etag/package.json" />
-      <path value="$PROJECT_DIR$/server/node_modules/express/package.json" />
-      <path value="$PROJECT_DIR$/server/node_modules/finalhandler/package.json" />
-      <path value="$PROJECT_DIR$/server/node_modules/forwarded/package.json" />
-      <path value="$PROJECT_DIR$/server/node_modules/fresh/package.json" />
-      <path value="$PROJECT_DIR$/server/node_modules/http-errors/package.json" />
-      <path value="$PROJECT_DIR$/server/node_modules/iconv-lite/package.json" />
-      <path value="$PROJECT_DIR$/server/node_modules/inherits/package.json" />
-      <path value="$PROJECT_DIR$/server/node_modules/ipaddr.js/package.json" />
-      <path value="$PROJECT_DIR$/server/node_modules/media-typer/package.json" />
-      <path value="$PROJECT_DIR$/server/node_modules/merge-descriptors/package.json" />
-      <path value="$PROJECT_DIR$/server/node_modules/methods/package.json" />
-      <path value="$PROJECT_DIR$/server/node_modules/mime-db/package.json" />
-      <path value="$PROJECT_DIR$/server/node_modules/mime-types/package.json" />
-      <path value="$PROJECT_DIR$/server/node_modules/mime/package.json" />
-      <path value="$PROJECT_DIR$/server/node_modules/ms/package.json" />
-      <path value="$PROJECT_DIR$/server/node_modules/negotiator/package.json" />
-      <path value="$PROJECT_DIR$/server/node_modules/on-finished/package.json" />
-      <path value="$PROJECT_DIR$/server/node_modules/parseurl/package.json" />
-      <path value="$PROJECT_DIR$/server/node_modules/path-to-regexp/package.json" />
-      <path value="$PROJECT_DIR$/server/node_modules/proxy-addr/package.json" />
-      <path value="$PROJECT_DIR$/server/node_modules/qs/package.json" />
-      <path value="$PROJECT_DIR$/server/node_modules/range-parser/package.json" />
-      <path value="$PROJECT_DIR$/server/node_modules/raw-body/node_modules/depd/package.json" />
-      <path value="$PROJECT_DIR$/server/node_modules/raw-body/node_modules/http-errors/package.json" />
-      <path value="$PROJECT_DIR$/server/node_modules/raw-body/node_modules/setprototypeof/package.json" />
-      <path value="$PROJECT_DIR$/server/node_modules/raw-body/package.json" />
-      <path value="$PROJECT_DIR$/server/node_modules/safe-buffer/package.json" />
-      <path value="$PROJECT_DIR$/server/node_modules/send/package.json" />
-      <path value="$PROJECT_DIR$/server/node_modules/serve-static/package.json" />
-      <path value="$PROJECT_DIR$/server/node_modules/setprototypeof/package.json" />
-      <path value="$PROJECT_DIR$/server/node_modules/statuses/package.json" />
-      <path value="$PROJECT_DIR$/server/node_modules/type-is/package.json" />
-      <path value="$PROJECT_DIR$/server/node_modules/unpipe/package.json" />
-      <path value="$PROJECT_DIR$/server/node_modules/utils-merge/package.json" />
-      <path value="$PROJECT_DIR$/server/node_modules/vary/package.json" />
-      <path value="$PROJECT_DIR$/server/package.json" />
-    </packageJsonPaths>
+    <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="10" />
@@ -107,6 +55,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -123,12 +72,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/server - 2" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -155,11 +103,12 @@
       <option name="presentableId" value="Default" />
       <updated>1528600089335</updated>
       <workItem from="1528600090874" duration="3109000" />
+      <workItem from="1528622983910" duration="234000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3109000" />
+    <option name="totallyTimeSpent" value="3343000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="22" width="1296" height="786" extended-state="6" />
@@ -192,8 +141,22 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/server/server.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="89" column="14" lean-forward="true" selection-start-line="89" selection-start-column="14" selection-end-line="89" selection-end-column="14" />
+        <state relative-caret-position="1513">
+          <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="92" column="36" lean-forward="true" selection-start-line="92" selection-start-column="36" selection-end-line="92" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server - 2/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" column="24" lean-forward="true" selection-start-line="21" selection-start-column="24" selection-end-line="21" selection-end-column="24" />
         </state>
       </provider>
     </entry>

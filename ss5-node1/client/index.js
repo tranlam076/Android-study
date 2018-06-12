@@ -55,11 +55,14 @@ function onSaveProduct(id = null) {
 		});
 	} else {
 		request(url, 'POST', newProduct, function(error, data) {
-			if (typeof data === 'string') {
-				document.getElementById('lb-message').innerHTML = data;
+			if (error) {
+				console.log(error);
+				document.getElementById('lb-message').innerHTML = error.responseJSON.error;
 				document.getElementById('lb-message').style.display = 'inline';
+			} else {
+				console.log(data);
+				fetchProducts();
 			}
-			fetchProducts();
 		});
 	}
 	document.getElementById('lb-message').style.display = 'none';
