@@ -1,6 +1,3 @@
-var products = []
-;
-
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
@@ -18,19 +15,13 @@ app
     .use(bodyParser.json()) // Execute every single request
     .use(bodyParser.urlencoded({extended: true}));
 
-app.get('/api/v1/products', function (req, res) {
-    return res.status(200).json(products);
+app.get('/api/v1/products', function (req, res, next) {
+    return requestHelper.getAllProducts(res);
 });
 
 app.get('/api/v1/products/:id', function (req, res) {
-    const id = parseInt(req.params.id);
-    const index = findProductByIdName(id);
-    if (index !== -1) {
-        return res.status(200).json(products[index]);
-    }
-    return res.status(400).json({
-        error: 'Id is not available'
-    });
+    const id = req.params.id;
+    return requestHelper.getProduct(res, id);
 });
 
 app.post('/api/v1/products', function (req, res) {
@@ -57,15 +48,7 @@ app.post('/api/v1/products', function (req, res) {
                 error: 'Price is not a number'
             });
         }
-        if (findProductByIdName(null, data.name) !== -1) {
-            return res.status(400).json({
-                error: 'Product name existed'
-            })
-        }
-        data.id = products.length + 1;
-        createNewId(data);
-        products.push(data);
-        return res.status(200).json(data);
+        return requestHelper.postProduct(res, data);
     } catch (e) {
         console.log(e.message);
     }
@@ -74,18 +57,9 @@ app.post('/api/v1/products', function (req, res) {
     })
 });
 
-function createNewId(data) {
-    if (findProductByIdName(data.id, null) === -1) {
-        return;
-    } else {
-        data.id++;
-        createNewId(data);
-    }
-}
-
 app.put('/api/v1/products/:id', function (req, res) {
     var data = req.body;
-    data.id = parseInt(req.params.id);
+    data.id = req.params.id;
     try {
         if (data.name === null || data.name === '' || data.name === undefined) {
             return res.status(400).json({
@@ -111,46 +85,14 @@ app.put('/api/v1/products/:id', function (req, res) {
     } catch (e) {
         console.log(e.message);
     }
-    if (findProductByIdName(null, data.name) !== -1) {
-        if (findProductByIdName(null, data.name) !== findProductByIdName(data.id, null)) {
-            return res.status(400).json({
-                error: 'Product name existed'
-            });
-        }
-    }
-    const index = findProductByIdName(data.id, null);
-    if (index !== -1) {
-        products[index] = data;
-        return res.status(200).json(data);
-    }
-    return res.status(400).json({
-        error: 'Id is not available'
-    });
+    return requestHelper.putProduct(res, data);
 });
 
 app.delete('/api/v1/products/:id', function (req, res) {
-    const id = parseInt(req.params.id);
-    const index = findProductByIdName(id, null);
-    if (index !== -1) {
-        var product = products[index];
-        products.splice(index, 1);
-        return res.status(200).json(product);
-    }
-    return res.status(400).json({
-        error: 'Id is not available'
-    });
+    const id = req.params.id;
+    return requestHelper.deleteProduct(res, id);
 });
 
-function findProductByIdName(id = null, name = null) {
-    for (var i = 0; i < products.length; i++) {
-        if (products[i].id === id || products[i].name === name) {
-            return i;
-        }
-    }
-    return -1;
-}
-
 app.listen(3000, function () {
-    requestHelper.getAll();
     console.log('Example app listening on port 3000!')
 });

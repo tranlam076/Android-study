@@ -6,6 +6,7 @@ function fetchProducts() {
 			console.log(error);
 			alert('Have something wrong!');
 		} else {
+			console.log(products);
 			if (products.length === 0) {
 				showLoading(false);
 				document.getElementById('tbl-product-body').innerHTML = '<span class="label label-warning">Product list is empty</span>';
@@ -47,11 +48,15 @@ function onSaveProduct(id = null) {
 	if (id !== null) {
 		document.getElementById('btn-submit').setAttribute('onclick', 'onSaveProduct()');
 		request(url+`/${id}`, 'PUT', newProduct, function(error, data) {
-			console.log(data);
-			document.getElementById('name').value = '';
-			document.getElementById('price').value = '';
-			document.getElementById('status').checked = false;
-			fetchProducts();
+			if (error) {
+				console.log(error);
+			} else {
+				console.log(data);
+				document.getElementById('name').value = '';
+				document.getElementById('price').value = '';
+				document.getElementById('status').checked = false;
+				fetchProducts();	
+			}	
 		});
 	} else {
 		request(url, 'POST', newProduct, function(error, data) {
@@ -70,11 +75,17 @@ function onSaveProduct(id = null) {
 
 function onUpdateProduct(id) {
 	request(url+`/${id}`, 'GET', null, function(error, product) {
-		console.log(product);
-		document.getElementById('name').value = product.name;
-		document.getElementById('price').value = product.price;
-		document.getElementById('status').checked = (product.isAvailable === true) ? true : false;
-		document.getElementById('btn-submit').setAttribute('onclick', `onSaveProduct(${product.id})`);	
+		if (error) {
+			console.log(error);
+			document.getElementById('lb-message').innerHTML = error.responseJSON.error;
+			document.getElementById('lb-message').style.display = 'inline';
+		} else {
+			console.log(product);
+			document.getElementById('name').value = product.name;
+			document.getElementById('price').value = product.price;
+			document.getElementById('status').checked = (product.isAvailable === true) ? true : false;
+			document.getElementById('btn-submit').setAttribute('onclick', `onSaveProduct(${product.id})`);	
+		}
 	});
 }
 
@@ -82,8 +93,12 @@ function onDeleteProduct(id) {
 	var allowDelete = confirm('Are you sure?');
 	if (allowDelete) {
 		request(url+`/${id}`, 'DELETE', null, function(error, product) {
-			console.log(product);
-			fetchProducts();
+			if (error) {
+				console.log(error);
+			} else {
+				console.log(product);
+				fetchProducts();	
+			}
 		});
 	}
 }
