@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Contact</string>
+    <string name="menu_delete">Delete All</string>
+</resources>

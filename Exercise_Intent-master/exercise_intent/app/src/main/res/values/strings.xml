@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Exercise_Intent</string>
+    <string name="tv_giai">Giải phương trình bậc nhất</string>
+    <string name="tv_hienkq">Kết quả phương trình bậc nhất</string>
+    <string name="tv_soA">Nhập số A: </string>
+    <string name="tv_soB">Nhập số B: </string>
+    <string name="tv_kq">Kết Quả</string>
+    <string name="tv_back">BACK</string>
+    <string name="title_activity_result">Ket qua phuong trinh bac nhat</string>
+</resources>

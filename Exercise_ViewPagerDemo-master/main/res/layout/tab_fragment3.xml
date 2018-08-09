@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    tools:context="tranlam.viewpagerdemo.Tab3">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_weight="20"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/activity_vertical_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin">
+
+            <LinearLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fragment_3.margintop"
+                    android:layout_weight="6"
+                    android:background="@drawable/rounded_corner"
+                    android:padding="@dimen/fragment_3.padding"
+                    android:text="Android’s open platform helps people around the globe enjoy greater access to more information and opportunity than ever before.!"
+                    android:textColor="@color/colorBlack"/>
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="@dimen/fragment_3.korner.size"
+                    android:layout_height="@dimen/fragment_3.korner.size"
+                    android:layout_marginLeft="@dimen/fragment_3.marginright"
+                    android:layout_marginTop="@dimen/fragment_3.korner.top"
+                    android:layout_weight="1"
+                    android:src="@drawable/arrow_bg1" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="@dimen/fragment_3.img.size"
+                    android:layout_height="@dimen/fragment_3.img.size"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="3"
+                    android:src="@drawable/user_pacific" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout1"
+                android:layout_marginTop="@dimen/fragment_3.space"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="@dimen/fragment_3.img.size"
+                    android:layout_height="@dimen/fragment_3.img.size"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="3"
+                    android:src="@drawable/user_pratikshya" />
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="@dimen/fragment_3.korner.size"
+                    android:layout_height="@dimen/fragment_3.korner.size"
+                    android:layout_marginRight="@dimen/fragment_3.marginright"
+                    android:layout_marginTop="@dimen/fragment_3.korner.top"
+                    android:layout_weight="1"
+                    android:src="@drawable/arrow_bg2" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fragment_3.margintop"
+                    android:layout_weight="6"
+                    android:background="@drawable/rounded_corner1"
+                    android:padding="@dimen/fragment_3.padding"
+                    android:text="Android’s open platform helps people around the globe enjoy greater access to more information and opportunity than ever before."
+                    android:textColor="@color/colorBlack" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout3"
+                android:layout_below="@+id/layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/fragment_3.space">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fragment_3.margintop"
+                    android:layout_weight="6"
+                    android:background="@drawable/rounded_corner"
+                    android:padding="@dimen/fragment_3.padding"
+                    android:text="Android’s open platform helps people around the globe enjoy greater access to more information and opportunity than ever before.!"
+                    android:textColor="@color/colorBlack"/>
+
+                <ImageView
+                    android:id="@+id/imageView13"
+                    android:layout_width="@dimen/fragment_3.korner.size"
+                    android:layout_height="@dimen/fragment_3.korner.size"
+                    android:layout_marginLeft="@dimen/fragment_3.marginright"
+                    android:layout_marginTop="@dimen/fragment_3.korner.top"
+                    android:layout_weight="1"
+                    android:src="@drawable/arrow_bg1" />
+
+                <ImageView
+                    android:id="@+id/imageView23"
+                    android:layout_width="@dimen/fragment_3.img.size"
+                    android:layout_height="@dimen/fragment_3.img.size"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="3"
+                    android:src="@drawable/user_pacific" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout3"
+                android:layout_marginTop="@dimen/fragment_3.space"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="@dimen/fragment_3.img.size"
+                    android:layout_height="@dimen/fragment_3.img.size"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="3"
+                    android:src="@drawable/user_pratikshya" />
+
+                <ImageView
+                    android:id="@+id/imageView14"
+                    android:layout_width="@dimen/fragment_3.korner.size"
+                    android:layout_height="@dimen/fragment_3.korner.size"
+                    android:layout_marginRight="@dimen/fragment_3.marginright"
+                    android:layout_marginTop="@dimen/fragment_3.korner.top"
+                    android:layout_weight="1"
+                    android:src="@drawable/arrow_bg2" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/fragment_3.margintop"
+                    android:layout_weight="6"
+                    android:background="@drawable/rounded_corner1"
+                    android:padding="@dimen/fragment_3.padding"
+                    android:text="Android’s open platform helps people around the globe enjoy greater access to more information and opportunity than ever before."
+                    android:textColor="@color/colorBlack" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <include
+        layout="@layout/type_message_area"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:gravity="bottom" />
+</LinearLayout>

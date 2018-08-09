@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="tranlam.viewpagerdemo.Tab1">
+
+    <LinearLayout
+        android:id="@+id/rLink1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/fagment_1.layout_margin"
+        android:layout_marginRight="@dimen/fagment_1.layout_margin"
+        android:layout_marginTop="@dimen/fagment_1.layout_margin"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/hoang_kieu" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="fill_horizontal"
+            android:inputType="textPersonName"
+            android:paddingBottom="@dimen/fagment_1.text_pading"
+            android:paddingTop="@dimen/fagment_1.text_pading"
+            android:text="@string/fragment_1.text1"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/fagment_1.text_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/fagment_1.layout_margin"
+        android:layout_marginRight="@dimen/fagment_1.layout_margin"
+        android:orientation="vertical"
+        android:weightSum="2.2">
+
+        <LinearLayout
+            android:id="@+id/rLink2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/fagment_1.image_size"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ngoc_trinh_1" />
+
+            <Space
+                android:layout_width="@dimen/fagment_1.space"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/tv_link2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="textPersonName"
+                android:text="@string/fragment_1.text2"
+                android:textSize="@dimen/fagment_1.text_size" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1" />
+
+        <LinearLayout
+            android:id="@+id/rLink3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/fagment_1.image_size"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ngoc_trinh_1" />
+
+            <Space
+                android:layout_width="@dimen/fagment_1.space"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:inputType="textPersonName"
+                android:text="@string/fragment_1.text3"
+                android:textSize="@dimen/fagment_1.text_size" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/tieude1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_giai"
+        android:gravity="center"
+        android:background="@color/colorGreen"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_size_large"
+        android:padding="@dimen/padding" />
+
+    <LinearLayout
+        android:id="@+id/so_a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tieude1"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:weightSum="8">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_soA"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_size_small"
+            android:layout_weight="1" />
+
+        <EditText
+            android:id="@+id/edt_soA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="7"
+            android:inputType="text"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/so_b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/so_a"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right"
+        android:weightSum="8">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_soB"
+            android:textSize="@dimen/text_size_small"
+            android:textAlignment="center"
+            android:layout_weight="1" />
+
+        <EditText
+            android:id="@+id/edt_soB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:inputType="text"/>
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_kq"
+        android:layout_below="@id/so_b"
+        android:text="@string/tv_kq"
+        android:background="@color/colorRed"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_size_normal" />
+</RelativeLayout>

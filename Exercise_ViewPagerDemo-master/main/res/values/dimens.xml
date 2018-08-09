@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fagment_1.layout_margin">5dp</dimen>
+    <dimen name="fagment_1.text_pading">10dp</dimen>
+    <dimen name="fagment_1.space">20dp</dimen>
+    <dimen name="fagment_1.text_size">15dp</dimen>
+    <dimen name="fagment_1.image_size">150dp</dimen>
+
+    <dimen name="fragment_2.margin">12dp</dimen>
+    <dimen name="fragment_2.paddingtop">10dp</dimen>
+    <dimen name="fragment_2.btnmargin">1dp</dimen>
+    <dimen name="fragment_2.text.size_large">30sp</dimen>
+    <dimen name="fragment_2.text.small">20sp</dimen>
+    <dimen name="fragment_2.text.normal">25sp</dimen>
+
+    <dimen name="fragment_3.text_size">25sp</dimen>
+    <dimen name="fragment_3.margintop">10dp</dimen>
+    <dimen name="fragment_3.marginright">-15dp</dimen>
+    <dimen name="fragment_3.img.size">40dp</dimen>
+    <dimen name="fragment_3.korner.size">30dp</dimen>
+    <dimen name="fragment_3.korner.top">6.5dp</dimen>
+    <dimen name="fragment_3.space">30dp</dimen>
+    <dimen name="fragment_3.padding">16dp</dimen>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+</resources>

@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "923224731755",
+    "firebase_url": "https://project-9132621434618583668.firebaseio.com",
+    "project_id": "project-9132621434618583668",
+    "storage_bucket": "project-9132621434618583668.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:923224731755:android:3d8ea7692254598f",
+        "android_client_info": {
+          "package_name": "tranlam.googlefirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "923224731755-9c3nktq66lujrhgq0lpps2csqufcmi26.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "tranlam.googlefirebase",
+            "certificate_hash": "e0d5e9ba0aa2878e8bebe13bd0e9f6d77cf89715"
+          }
+        },
+        {
+          "client_id": "923224731755-rhotp8qigbsl1s4dld1b50q7tivtg7l0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAj2giSoI0IvTM0iUtOfH07-e9OW9Dl-ww"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "923224731755-rhotp8qigbsl1s4dld1b50q7tivtg7l0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

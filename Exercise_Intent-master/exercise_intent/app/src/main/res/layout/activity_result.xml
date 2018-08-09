@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/tieude2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_hienkq"
+        android:gravity="center"
+        android:background="@color/colorGreen"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_size_large"
+        android:padding="@dimen/padding" />
+
+    <LinearLayout
+        android:id="@+id/row_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tieude2"
+        android:layout_marginTop="@dimen/margin_top"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_right">
+
+        <EditText
+            android:id="@+id/tv_kq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
+    </LinearLayout>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_Back"
+        android:layout_below="@id/row_2"
+        android:text="@string/tv_back"
+        android:background="@color/colorRed"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/text_size_normal" />
+</RelativeLayout>
